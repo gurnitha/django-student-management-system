@@ -102,3 +102,16 @@
         new file:   apps/hod/views.py
         modified:   apps/staff/apps.py
         modified:   config/settings.py
+
+
+#### 4.4 Create user app
+
+        modified:   README.md
+        new file:   apps/user/__init__.py
+        new file:   apps/user/admin.py
+        new file:   apps/user/apps.py
+        new file:   apps/user/migrations/__init__.py
+        new file:   apps/user/models.py
+        new file:   apps/user/tests.py
+        new file:   apps/user/views.py
+        modified:   config/settings.py
