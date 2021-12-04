@@ -24,3 +24,14 @@
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+### 2. DJANGO ADMIN ACTIVATION
+###---------------------------
+
+
+#### 2.1 Create superuser
+
+        (venv3932) λ python manage.py migrate
+        (venv3932) λ python manage.py createsuperuser
+        
