@@ -190,3 +190,9 @@
         modified:   apps/user/views.py
         modified:   templates/shared/header.html
 
+
+#### 5.9 Login Part 9 - Showing username and user_type (HOD) in HOD panel
+
+        modified:   README.md
+        modified:   apps/hod/templates/hod/home.html
+        modified:   templates/shared/header.html
