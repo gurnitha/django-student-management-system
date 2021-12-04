@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, logout, login
+from django.contrib import messages
 
 # Locals
 from apps.user.EmailBackEnd import EmailBackEnd 
@@ -34,10 +35,12 @@ def doLogin(request):
 
 			else:
 				# message
+				messages.error(request, 'Invalid email or password!')
 				return redirect('user:user_login') 
 
 		else:
 			# message
+			messages.error(request, 'Invalid email or password!')
 			return redirect('user:user_login')
 
 	# return None

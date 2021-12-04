@@ -164,4 +164,11 @@
 
         Successfully logged in as superuser
 
-        
+
+#### 5.6 Login Part 6 - Adding flash message
+
+        modified:   README.md
+        modified:   apps/user/templates/user/login.html
+        modified:   apps/user/views.py
+
+

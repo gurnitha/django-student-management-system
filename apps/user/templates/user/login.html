@@ -28,8 +28,27 @@
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
+
+                            <!-- Header -->
                             <h1>Login</h1>
                             <p class="account-subtitle">Access to our dashboard</p>
+                            <!-- Header end -->
+
+                            <!-- Falsh Message -->
+                            {% if messages %}
+                            {% for message in messages %}
+                            {% if message.tags == 'error' %}
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                              <strong>Holy guacamole!</strong>{{message}}
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                            {% endif %}
+                            <!-- Flash message end -->
+
                             <form 
                                 action="{% url 'user:doLogin' %}" 
                                 method="POST">
