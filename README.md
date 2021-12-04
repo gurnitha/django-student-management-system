@@ -59,3 +59,20 @@
         new file:   templates/shared/header.html
         new file:   templates/shared/scripts.html
         new file:   templates/shared/sidebar.html
+
+
+### 4. CREATING MORE APPS
+###----------------------
+
+
+#### 4.1 Create student app
+
+        modified:   README.md
+        new file:   apps/student/__init__.py
+        new file:   apps/student/admin.py
+        new file:   apps/student/apps.py
+        new file:   apps/student/migrations/__init__.py
+        new file:   apps/student/models.py
+        new file:   apps/student/tests.py
+        new file:   apps/student/views.py
+        modified:   config/settings.py
