@@ -11,6 +11,9 @@ urlpatterns = [
     # user
     path('', include('apps.user.urls', namespace='user')),
 
+    # hod
+    path('', include('apps.hod.urls', namespace='hod')),
+
 
     # main
     path('', include('apps.main.urls', namespace='main')),

@@ -172,3 +172,10 @@
         modified:   apps/user/views.py
 
 
+#### 5.7 Login Part 7 - Creating HOD home page
+
+        modified:   README.md
+        new file:   apps/hod/templates/hod/home.html
+        new file:   apps/hod/urls.py
+        modified:   apps/hod/views.py
+        modified:   config/urls.py
