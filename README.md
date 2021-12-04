@@ -76,3 +76,15 @@
         new file:   apps/student/tests.py
         new file:   apps/student/views.py
         modified:   config/settings.py
+
+
+#### 4.2 Create staff app
+
+        modified:   README.md
+        new file:   apps/staff/__init__.py
+        new file:   apps/staff/admin.py
+        new file:   apps/staff/apps.py
+        new file:   apps/staff/migrations/__init__.py
+        new file:   apps/staff/models.py
+        new file:   apps/staff/tests.py
+        new file:   apps/staff/views.py
