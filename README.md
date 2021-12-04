@@ -144,3 +144,9 @@
         new file:   apps/user/migrations/0001_initial.py
         modified:   apps/user/models.py
         modified:   config/settings.py
+
+
+#### 5.4 Login Part 4 - Create EmailBackEnd
+
+        modified:   README.md
+        new file:   apps/user/EmailBackEnd.py
