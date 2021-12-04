@@ -179,3 +179,14 @@
         new file:   apps/hod/urls.py
         modified:   apps/hod/views.py
         modified:   config/urls.py
+
+
+#### 5.8 Login Part 8 - Restrictiong un-logged in user to access hod page
+
+        modified:   README.md
+        modified:   apps/hod/views.py
+        modified:   apps/main/views.py
+        modified:   apps/user/urls.py
+        modified:   apps/user/views.py
+        modified:   templates/shared/header.html
+
