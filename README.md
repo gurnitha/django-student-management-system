@@ -150,3 +150,18 @@
 
         modified:   README.md
         new file:   apps/user/EmailBackEnd.py
+
+
+#### 5.5 Login Part 5 - login authentication | Multi User Role Based Login System
+
+        modified:   README.md
+        modified:   apps/user/EmailBackEnd.py
+        modified:   apps/user/templates/user/login.html
+        modified:   apps/user/urls.py
+        modified:   apps/user/views.py
+
+        NOTE:
+
+        Successfully logged in as superuser
+
+        

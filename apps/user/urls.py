@@ -10,6 +10,7 @@ app_name = 'user'
 
 urlpatterns = [
 
-    path('login/', views.user_login, name='user_login'),
+    path('', views.user_login, name='user_login'),
+    path('doLogin/', views.doLogin, name='doLogin'),
     
 ]
