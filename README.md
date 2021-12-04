@@ -34,4 +34,17 @@
 
         (venv3932) λ python manage.py migrate
         (venv3932) λ python manage.py createsuperuser
-        
+
+
+### 3. TEMPLATING AND STATIC FILES
+###-------------------------------
+
+
+#### 3.1 Adding template to home page and load static files
+
+        modified:   README.md
+        modified:   apps/main/templates/main/index.html
+
+        NOTE: 
+
+        Static files are ignored by git
