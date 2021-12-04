@@ -196,3 +196,9 @@
         modified:   README.md
         modified:   apps/hod/templates/hod/home.html
         modified:   templates/shared/header.html
+
+
+#### 5.10 Login Part 10 - Modified Sidebar:removed some menus and added icons
+
+        modified:   README.md
+        modified:   templates/shared/sidebar.html
