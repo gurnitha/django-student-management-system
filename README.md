@@ -135,3 +135,12 @@
 
         modified:   README.md
         modified:   apps/user/templates/user/login.html
+
+
+#### 5.3 Login Part 3 - Create CustomUserModel
+
+        modified:   README.md
+        modified:   apps/user/admin.py
+        new file:   apps/user/migrations/0001_initial.py
+        modified:   apps/user/models.py
+        modified:   config/settings.py

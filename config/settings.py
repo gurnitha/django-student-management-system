@@ -165,3 +165,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # <-- full path to media files
 '''Media url is defining how to access
 the media files from the browser.'''
 MEDIA_URL = '/media/'
+
+
+AUTH_USER_MODEL = 'user.CustomUserModel'
