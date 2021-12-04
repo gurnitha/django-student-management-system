@@ -88,3 +88,17 @@
         new file:   apps/staff/models.py
         new file:   apps/staff/tests.py
         new file:   apps/staff/views.py
+
+
+#### 4.3 Create hod app
+
+        modified:   README.md
+        new file:   apps/hod/__init__.py
+        new file:   apps/hod/admin.py
+        new file:   apps/hod/apps.py
+        new file:   apps/hod/migrations/__init__.py
+        new file:   apps/hod/models.py
+        new file:   apps/hod/tests.py
+        new file:   apps/hod/views.py
+        modified:   apps/staff/apps.py
+        modified:   config/settings.py

@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Locals
+    'apps.hod.apps.HodConfig',
     'apps.main.apps.MainConfig',
+    'apps.staff.apps.StaffConfig',
     'apps.student.apps.StudentConfig',
 ]
 
