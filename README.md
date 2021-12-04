@@ -115,3 +115,17 @@
         new file:   apps/user/tests.py
         new file:   apps/user/views.py
         modified:   config/settings.py
+
+
+### 5. USER: LOGIN, REGISTER, LOGOUT
+###---------------------------------
+
+
+#### 5.1 Login Part 1 - Create login page TVUrl
+
+        modified:   README.md
+        new file:   apps/user/templates/user/login.html
+        new file:   apps/user/urls.py
+        modified:   apps/user/views.py
+        modified:   config/urls.py
+        modified:   templates/shared/header.html
