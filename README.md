@@ -129,3 +129,9 @@
         modified:   apps/user/views.py
         modified:   config/urls.py
         modified:   templates/shared/header.html
+
+
+#### 5.2 Login Part 2 - Removed social login and forgot password form login page 
+
+        modified:   README.md
+        modified:   apps/user/templates/user/login.html
