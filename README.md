@@ -48,3 +48,14 @@
         NOTE: 
 
         Static files are ignored by git
+
+
+#### 3.2 Templates inheritance
+
+        modified:   README.md
+        modified:   apps/main/templates/main/index.html
+        new file:   templates/base.html
+        new file:   templates/shared/head.html
+        new file:   templates/shared/header.html
+        new file:   templates/shared/scripts.html
+        new file:   templates/shared/sidebar.html
