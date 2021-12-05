@@ -237,3 +237,19 @@
         modified:   README.md
         modified:   apps/user/templates/user/profile-update.html
         modified:   apps/user/views.py
+
+
+#### 6.5 PROFILE Part 5 - Update user profile
+
+        modified:   apps/user/admin.py
+        new file:   apps/user/migrations/0002_alter_customusermodel_profile_pic.py
+        new file:   apps/user/migrations/0003_alter_customusermodel_profile_pic.py
+        modified:   apps/user/models.py
+        deleted:    apps/user/templates/user/profile-update.html
+        modified:   apps/user/templates/user/profile.html
+        new file:   apps/user/templates/user/profileXX.html
+        modified:   apps/user/urls.py
+        modified:   apps/user/views.py
+        new file:   media/images/profile_pic/darling.PNG
+        new file:   media/images/profile_pic/ing_wS6BVez.PNG
+        modified:   templates/shared/header.html

@@ -57,13 +57,58 @@ def doLogout(request):
 
 
 # User profile
+@login_required(login_url='user:user_login')
 def profile(request):
-	return render(request, 'user/profile.html')
 
-
-# User profile create
-def profile_update(request):
 	user = CustomUserModel.objects.get(id=request.user.id)
-	print(user)
+
+	# print(user)
+	
 	context = {'user':user}
-	return render(request, 'user/profile-update.html', context)
+	return render(request, 'user/profile.html', context)
+
+
+# User profile update
+@login_required(login_url='user:user_login')
+def profile_update(request):
+
+	if request.method == 'POST':
+		profile_pic = request.FILES.get('profile_pic')
+		first_name  = request.POST.get('first_name')
+		last_name   = request.POST.get('last_name')
+		# email  		= request.POST.get('email')
+		# username  	= request.POST.get('username')
+		password  	= request.POST.get('password')
+
+		# testing
+		print(profile_pic)
+		# print(first_name, last_name, password)
+		# print(profile_pic, first_name, last_name, email, username, password)
+
+		try:
+			customuser = CustomUserModel.objects.get(id=request.user.id)
+
+			customuser.first_name 	= first_name
+			customuser.last_name 	= last_name
+			# customuser.username 	= username
+			customuser.profile_pic 	= profile_pic
+			
+			if password != None and password != "":
+				customuser.set_password(password)
+
+			if profile_pic != None and profile_pic != "":
+				customuser.profile_pic = profile_pic
+
+			customuser.save()
+
+			messages.success(request, 'Profile updated successfully!')
+			# redirect('user:profile_update')
+			# return redirect('hod:hod_home')
+			return redirect('user:profile')
+			# return redirect('user:profile_update')
+
+		except:
+			messages.error(request, 'Failed to update Profile!')
+
+	context = {}
+	return render(request, 'user/profile.html', context)

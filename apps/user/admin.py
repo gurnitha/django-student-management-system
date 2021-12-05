@@ -8,7 +8,8 @@ from django.contrib.auth.admin import UserAdmin
 from apps.user.models import CustomUserModel
 
 class UserModelAdmin(UserAdmin):
-	list_display = ['username', 'user_type']
+	list_display = ['username', 'user_type', 'profile_pic']
 
 # Register your models here.
+# admin.site.register(CustomUserModel)
 admin.site.register(CustomUserModel, UserModelAdmin)

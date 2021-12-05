@@ -17,5 +17,5 @@ class CustomUserModel(AbstractUser):
 	)
 
 	user_type = models.CharField(choices=USER,max_length=50,default=1)
-	profile_pic = models.ImageField(upload_to='media/profile')
+	profile_pic = models.ImageField(upload_to='images/profile_pic')
 
