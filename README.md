@@ -202,3 +202,15 @@
 
         modified:   README.md
         modified:   templates/shared/sidebar.html
+
+
+### 6. USER: PROFILE
+###-----------------
+
+
+#### 6.1 PROFILE Part 1 - Create profile page TVU
+
+        modified:   README.md
+        new file:   apps/user/templates/user/profile.html
+        modified:   apps/user/urls.py
+        modified:   apps/user/views.py

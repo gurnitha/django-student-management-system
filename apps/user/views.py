@@ -11,9 +11,12 @@ from apps.user.EmailBackEnd import EmailBackEnd
 
 # Create your views here.
 
+# Login template
 def user_login(request):
 	return render(request, 'user/login.html')
 
+
+# User login
 def doLogin(request):
 
 	if request.method == 'POST':
@@ -46,8 +49,12 @@ def doLogin(request):
 			return redirect('user:user_login')
 
 
-
+# User logout
 def doLogout(request):
 	logout(request)
 	return redirect('user:user_login')
 
+
+# User profile
+def profile(request):
+	return render(request, 'user/profile.html')
