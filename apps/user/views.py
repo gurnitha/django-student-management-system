@@ -91,7 +91,7 @@ def profile_update(request):
 			customuser.first_name 	= first_name
 			customuser.last_name 	= last_name
 			# customuser.username 	= username
-			customuser.profile_pic 	= profile_pic
+			# customuser.profile_pic 	= profile_pic
 			
 			if password != None and password != "":
 				customuser.set_password(password)

@@ -253,3 +253,10 @@
         new file:   media/images/profile_pic/darling.PNG
         new file:   media/images/profile_pic/ing_wS6BVez.PNG
         modified:   templates/shared/header.html
+
+
+#### 6.6 PROFILE Part 6 - re-Update user profile
+
+        modified:   apps/user/views.py
+        renamed:    media/images/profile_pic/ing_wS6BVez.PNG -> media/images/profile_pic/ing.PNG
+
