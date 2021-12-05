@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 # Locals
 from apps.user.EmailBackEnd import EmailBackEnd 
+from apps.user.models import CustomUserModel
 
 # Create your views here.
 
@@ -62,4 +63,7 @@ def profile(request):
 
 # User profile create
 def profile_update(request):
-	return render(request, 'user/profile-update.html')
+	user = CustomUserModel.objects.get(id=request.user.id)
+	print(user)
+	context = {'user':user}
+	return render(request, 'user/profile-update.html', context)

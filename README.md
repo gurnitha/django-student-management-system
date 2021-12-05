@@ -230,3 +230,10 @@
         modified:   apps/user/urls.py
         modified:   apps/user/views.py
         modified:   templates/shared/header.html
+
+
+#### 6.4 PROFILE Part 4 - Fetching user data to Profile Update page
+
+        modified:   README.md
+        modified:   apps/user/templates/user/profile-update.html
+        modified:   apps/user/views.py
