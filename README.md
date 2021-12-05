@@ -214,3 +214,10 @@
         new file:   apps/user/templates/user/profile.html
         modified:   apps/user/urls.py
         modified:   apps/user/views.py
+
+
+#### 6.2 PROFILE Part 2 - Add template to profile page
+
+        modified:   README.md
+        modified:   apps/user/templates/user/profile.html
+        modified:   templates/shared/header.html
