@@ -58,3 +58,8 @@ def doLogout(request):
 # User profile
 def profile(request):
 	return render(request, 'user/profile.html')
+
+
+# User profile create
+def profile_update(request):
+	return render(request, 'user/profile-update.html')

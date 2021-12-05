@@ -18,4 +18,6 @@ urlpatterns = [
     path('doLogout/', views.doLogout, name='doLogout'),
     # User profile
     path('profile/', views.profile, name='profile'),
+    # User profile
+    path('profile-update/', views.profile_update, name='profile_update'),
 ]

@@ -221,3 +221,12 @@
         modified:   README.md
         modified:   apps/user/templates/user/profile.html
         modified:   templates/shared/header.html
+
+
+#### 6.3 PROFILE Part 3 - Create User Profile Update page (form)
+
+        modified:   README.md
+        new file:   apps/user/templates/user/profile-update.html
+        modified:   apps/user/urls.py
+        modified:   apps/user/views.py
+        modified:   templates/shared/header.html
