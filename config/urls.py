@@ -15,6 +15,10 @@ urlpatterns = [
     path('', include('apps.hod.urls', namespace='hod')),
 
 
+    # student
+    path('', include('apps.student.urls', namespace='student')),
+
+
     # main
     path('', include('apps.main.urls', namespace='main')),
 

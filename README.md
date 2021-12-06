@@ -260,3 +260,22 @@
         modified:   apps/user/views.py
         renamed:    media/images/profile_pic/ing_wS6BVez.PNG -> media/images/profile_pic/ing.PNG
 
+
+### 7. STUDENT
+###-----------
+
+
+#### 7.1 STUDENT Part 1 - Create add student page TVU
+
+        modified:   README.md
+        modified:   apps/hod/templates/hod/home.html
+        new file:   apps/hod/templates/hod/homeORI.html
+        modified:   apps/hod/views.py
+        new file:   apps/student/templates/student/add-student.html
+        new file:   apps/student/urls.py
+        modified:   apps/student/views.py
+        modified:   apps/user/templates/user/profile.html
+        modified:   config/urls.py
+        modified:   templates/base.html
+        new file:   templates/shared/footer.html
+        modified:   templates/shared/sidebar.html

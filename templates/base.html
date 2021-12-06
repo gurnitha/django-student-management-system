@@ -1,32 +1,29 @@
 {% load static %}
-
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     {% include 'shared/head.html' %}
     <title>Student MS | {% block title %} {{block.super}}{% endblock title %}</title>
-
 </head>
 <body>
     <div class="main-wrapper">
 
-    	<!-- Header -->
-    	{% include 'shared/header.html' %}
+        <!-- Header -->
+        {% include 'shared/header.html' %}
         <!-- Header end -->
 
         <!-- Sidebar -->
-    	{% include 'shared/sidebar.html' %}
+        {% include 'shared/sidebar.html' %}
         <!-- Sidebar end -->
 
         <!-- Content -->
         {% block content %}
         {% endblock content %}
         <!-- Content end -->
+
+        {% include 'shared/footer.html' %}
         
     </div>
-
     <!-- Scripts -->
     {% include 'shared/scripts.html' %}
 </body>
