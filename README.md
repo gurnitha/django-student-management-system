@@ -302,3 +302,10 @@
         modified:   README.md
         modified:   apps/student/models.py
         modified:   apps/student/templates/student/add-student.html
+
+
+#### 7.5 STUDENT Part 5 - Fetching data Course and Session_year to add student
+
+        modified:   README.md
+        modified:   apps/student/templates/student/add-student.html
+        modified:   apps/student/views.py

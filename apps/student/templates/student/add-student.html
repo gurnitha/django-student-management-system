@@ -104,9 +104,13 @@
                                        <label>Course</label>
                                        <select class="form-control">
                                           <option>Select Course</option>
-                                          <option>Biology</option>
-                                          <option>Match</option>
-                                          <option>Others</option>
+                                          {% if courses %}
+                                          {% for course in courses %}
+                                          <option value="{{course.id}}">{{course.name}}</option>
+                                          {% endfor %}
+                                          {% else %}
+                                          <p>No courses found</p>
+                                          {% endif %}
                                        </select>
                                     </div>
                                  </div>
@@ -114,10 +118,15 @@
                                     <div class="form-group">
                                        <label>Session Year</label>
                                        <select class="form-control">
-                                          <option>Select Session</option>
-                                          <option>Biology</option>
-                                          <option>Match</option>
-                                          <option>Others</option>
+                                          <option>Select Session Year</option>
+
+                                          {% if sessions %}
+                                          {% for session in sessions %}
+                                          <option value="{{session.id}}">{{session.session_start}} to {{session.session_end}}</option>
+                                          {% endfor %}
+                                          {% else %}
+                                          <p>No sessions found</p>
+                                          {% endif %}
                                        </select>
                                     </div>
                                  </div>
