@@ -279,3 +279,11 @@
         modified:   templates/base.html
         new file:   templates/shared/footer.html
         modified:   templates/shared/sidebar.html
+
+
+#### 7.2 STUDENT Part 2 - Create Course and SessionYear models
+
+        modified:   README.md
+        modified:   apps/student/admin.py
+        new file:   apps/student/migrations/0001_initial.py
+        modified:   apps/student/models.py
