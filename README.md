@@ -295,3 +295,10 @@
         modified:   apps/student/admin.py
         new file:   apps/student/migrations/0002_auto_20211207_0350.py
         modified:   apps/student/models.py
+
+
+#### 7.4 STUDENT Part 4 - Modified student add form and insert dumy data
+
+        modified:   README.md
+        modified:   apps/student/models.py
+        modified:   apps/student/templates/student/add-student.html

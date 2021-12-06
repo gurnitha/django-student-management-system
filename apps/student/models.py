@@ -25,6 +25,10 @@ class Session_Year(models.Model):
 		verbose_name_plural = 'Session year'
 
 
+	def __str__(self):
+		return self.session_start + " - " + self.session_end
+
+
 class Student(models.Model):
 	admin = models.OneToOneField(CustomUserModel, on_delete=models.CASCADE)
 	address = models.TextField()
