@@ -4,6 +4,7 @@
 from django.db import models
 
 # Locals
+from apps.user.models import CustomUserModel
 
 # Create your models here.
 
@@ -22,3 +23,16 @@ class Session_Year(models.Model):
 
 	class Meta:
 		verbose_name_plural = 'Session year'
+
+
+class Student(models.Model):
+	admin = models.OneToOneField(CustomUserModel, on_delete=models.CASCADE)
+	address = models.TextField()
+	gender = models.CharField(max_length=100)
+	course_id = models.ForeignKey(Course, on_delete=models.DO_NOTHING)
+	session_year_id = models.ForeignKey(Session_Year, on_delete=models.DO_NOTHING)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		return self.admin.first_name + " " + self.admin.last_name

@@ -287,3 +287,11 @@
         modified:   apps/student/admin.py
         new file:   apps/student/migrations/0001_initial.py
         modified:   apps/student/models.py
+
+
+#### 7.3 STUDENT Part 3 - Create Student model
+
+        modified:   README.md
+        modified:   apps/student/admin.py
+        new file:   apps/student/migrations/0002_auto_20211207_0350.py
+        modified:   apps/student/models.py
