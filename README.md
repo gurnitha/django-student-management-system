@@ -329,3 +329,12 @@
         modified:   README.md
         modified:   apps/student/templates/student/add-student.html
         modified:   apps/student/views.py
+
+
+#### 7.8 STUDENT Part 8 - add Student File in Includes Message File 
+
+        modified:   README.md
+        modified:   apps/student/templates/student/add-student.html
+        new file:   media/images/profile_pic/contact01.PNG
+        new file:   media/images/profile_pic/contact02.PNG
+        new file:   templates/shared/flash-messages.html
