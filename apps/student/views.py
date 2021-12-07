@@ -107,3 +107,8 @@ def add_student(request):
 
 
 # Add student end ----------------------------------------------------
+
+
+def list_student(request):
+	context = {}
+	return render(request, 'student/list-student.html')

@@ -338,3 +338,12 @@
         new file:   media/images/profile_pic/contact01.PNG
         new file:   media/images/profile_pic/contact02.PNG
         new file:   templates/shared/flash-messages.html
+
+
+#### 7.9 STUDENT Part 9 - Create list-student page TVU
+
+        modified:   README.md
+        new file:   apps/student/templates/student/list-student.html
+        modified:   apps/student/urls.py
+        modified:   apps/student/views.py
+        modified:   templates/shared/sidebar.html
