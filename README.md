@@ -322,3 +322,10 @@
         new file:   media/images/profile_pic/contact01_1O5zMGJ.PNG
         new file:   media/images/profile_pic/contact01_zvDXHFy.PNG
         new file:   media/images/profile_pic/contact02.PNG
+
+
+#### 7.7 STUDENT Part 7 - Add Student Form All Fields Required Validation
+
+        modified:   README.md
+        modified:   apps/student/templates/student/add-student.html
+        modified:   apps/student/views.py

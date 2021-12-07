@@ -25,7 +25,7 @@
                                 {% for message in messages %}
                                 {% if message.tags == 'error' %}
                                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                  <strong>Holy guacamole!</strong>{{message}}
+                                  {{message}}
                                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -40,7 +40,22 @@
                                 {% for message in messages %}
                                 {% if message.tags == 'success' %}
                                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                  <strong>Holy guacamole!</strong>{{message}}
+                                  {{message}}
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                                {% endif %}
+                                <!-- Flash message end -->
+
+                                <!-- Falsh Message -->
+                                {% if messages %}
+                                {% for message in messages %}
+                                {% if message.tags == 'warning' %}
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                  {{message}}
                                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -56,7 +71,8 @@
                                         <input 
                                             type="file" 
                                             name="profile_pic" 
-                                            class="form-control" />
+                                            class="form-control"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -67,7 +83,8 @@
                                             name="first_name" 
                                             class="form-control"
                                             placeholder="Enter first name" 
-                                            value="{{user.first_name}}" />
+                                            value="{{user.first_name}}" 
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -78,7 +95,8 @@
                                             name="last_name" 
                                             class="form-control" 
                                             placeholder="Enter last name" 
-                                            value="{{user.last_name}}" />
+                                            value="{{user.last_name}}" 
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -87,7 +105,8 @@
                                        <select
                                             type="text" 
                                             name="gender" 
-                                            class="form-control">
+                                            class="form-control"
+                                            required>
                                           <option>Select Gender</option>
                                           <option value="Female">Female</option>
                                           <option value="Male">Male</option>
@@ -102,6 +121,7 @@
                                        <textarea
                                             type="text" 
                                             name="address"
+                                            required
                                             class="form-control"></textarea>
                                     </div>
                                  </div>
@@ -111,7 +131,8 @@
                                        <select
                                             type="text" 
                                             name="course_id" 
-                                            class="form-control">
+                                            class="form-control"
+                                            required>
                                           <option>Select Course</option>
                                           {% if courses %}
                                           {% for course in courses %}
@@ -129,7 +150,8 @@
                                        <select
                                             type="text" 
                                             name="session_year_id" 
-                                            class="form-control">
+                                            class="form-control"
+                                            required>
                                           <option>Select Session Year</option>
 
                                           {% if sessions %}
@@ -151,7 +173,8 @@
                                             name="email" 
                                             class="form-control" 
                                             placeholder="Enter email"
-                                            value="{{user.email}}"/>
+                                            value="{{user.email}}"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -162,7 +185,8 @@
                                             name="username" 
                                             class="form-control" 
                                             placeholder="Enter username"
-                                            value="{{user.username}}"/>
+                                            value="{{user.username}}"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -173,7 +197,8 @@
                                             name="password" 
                                             class="form-control" 
                                             placeholder="" 
-                                            value="" />
+                                            value="" 
+                                            required />
                                     </div>
                                 </div>
 

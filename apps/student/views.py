@@ -63,6 +63,7 @@ def add_student(request):
 				first_name = first_name,
 				last_name  = last_name,
 				username   = username,
+				email 	   = email,
 				user_type  = 3,
 			)
 			user.set_password(password)
@@ -81,7 +82,8 @@ def add_student(request):
 			)
 
 			student.save()
-			messages.success(request, 'Student added successfully!')
+			messages.success(request, user.first_name + " " + user.last_name + ' Added successfully!')
+			# messages.success(request, 'Student added successfully!')
 			return redirect('student:add_student')
 			# 5. end Making TWO in ONE: Student as user and Student's choice for course and session_year
 
