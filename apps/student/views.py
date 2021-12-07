@@ -110,5 +110,6 @@ def add_student(request):
 
 
 def list_student(request):
-	context = {}
-	return render(request, 'student/list-student.html')
+	all_students = Student.objects.all() 
+	context = {'students':all_students}
+	return render(request, 'student/list-student.html', context)

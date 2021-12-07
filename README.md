@@ -347,3 +347,12 @@
         modified:   apps/student/urls.py
         modified:   apps/student/views.py
         modified:   templates/shared/sidebar.html
+
+
+#### 7.10 STUDENT Part 10 - Fetch students to students list (Backend)
+
+        modified:   README.md
+        modified:   apps/student/templates/student/list-student.html
+        modified:   apps/student/views.py
+        new file:   media/images/profile_pic/SushantSinghRajput_cMQOCfZ.PNG
+        modified:   templates/shared/sidebar.html
