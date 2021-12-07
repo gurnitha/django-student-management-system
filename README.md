@@ -309,3 +309,16 @@
         modified:   README.md
         modified:   apps/student/templates/student/add-student.html
         modified:   apps/student/views.py
+
+
+#### 7.6 STUDENT Part 6 - Add Student (Backend) | Add Student Form Data Save In Student Model
+
+        modified:   README.md
+        modified:   apps/student/templates/student/add-student.html
+        modified:   apps/student/views.py
+        new file:   media/images/profile_pic/AI-BABY.PNG
+        new file:   media/images/profile_pic/SushantSinghRajput.PNG
+        new file:   media/images/profile_pic/contact01.PNG
+        new file:   media/images/profile_pic/contact01_1O5zMGJ.PNG
+        new file:   media/images/profile_pic/contact01_zvDXHFy.PNG
+        new file:   media/images/profile_pic/contact02.PNG

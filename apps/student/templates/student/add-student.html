@@ -11,7 +11,7 @@
                         <div class="card-body">
                             <form 
                                 method="POST" 
-                                action="{% url 'user:profile_update' %}"
+                                action="{% url 'student:add_student' %}"
                                 enctype="multipart/form-data">
 
                                 {% csrf_token %}
@@ -84,7 +84,10 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                        <label>Gender</label>
-                                       <select class="form-control">
+                                       <select
+                                            type="text" 
+                                            name="gender" 
+                                            class="form-control">
                                           <option>Select Gender</option>
                                           <option value="Female">Female</option>
                                           <option value="Male">Male</option>
@@ -96,13 +99,19 @@
                                  <div class="col-sm-12">
                                     <div class="form-group">
                                        <label>Address</label>
-                                       <textarea class="form-control"></textarea>
+                                       <textarea
+                                            type="text" 
+                                            name="address"
+                                            class="form-control"></textarea>
                                     </div>
                                  </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                        <label>Course</label>
-                                       <select class="form-control">
+                                       <select
+                                            type="text" 
+                                            name="course_id" 
+                                            class="form-control">
                                           <option>Select Course</option>
                                           {% if courses %}
                                           {% for course in courses %}
@@ -117,7 +126,10 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                        <label>Session Year</label>
-                                       <select class="form-control">
+                                       <select
+                                            type="text" 
+                                            name="session_year_id" 
+                                            class="form-control">
                                           <option>Select Session Year</option>
 
                                           {% if sessions %}
@@ -139,7 +151,6 @@
                                             name="email" 
                                             class="form-control" 
                                             placeholder="Enter email"
-                                            readonly 
                                             value="{{user.email}}"/>
                                     </div>
                                 </div>
@@ -151,7 +162,6 @@
                                             name="username" 
                                             class="form-control" 
                                             placeholder="Enter username"
-                                            readonly 
                                             value="{{user.username}}"/>
                                     </div>
                                 </div>
@@ -162,7 +172,7 @@
                                             type="password" 
                                             name="password" 
                                             class="form-control" 
-                                            placeholder="Fill only if you want to change your password!" 
+                                            placeholder="" 
                                             value="" />
                                     </div>
                                 </div>
