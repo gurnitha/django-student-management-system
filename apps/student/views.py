@@ -8,7 +8,7 @@ from django.contrib import messages
 # Locals
 from apps.student.models import Course, Session_Year
 from apps.user.models import CustomUserModel
-from apps.student.models import Student  
+from apps.student.models import Student, Course, Session_Year  
 
 # Create your views here.
 
@@ -113,3 +113,18 @@ def list_student(request):
 	all_students = Student.objects.all() 
 	context = {'students':all_students}
 	return render(request, 'student/list-student.html', context)
+
+
+def edit_student(request,id):
+	student = Student.objects.filter(id=id)
+	# Testing
+	print(student)
+	courses = Course.objects.all() 
+	# Testing
+	# print(courses)
+	session_years = Session_Year.objects.all()
+	# Tesing
+	# print(session_years)
+
+	context = {'student':student, 'courses':courses, 'sessions':session_years}
+	return render(request, 'student/detail-student.html', context)

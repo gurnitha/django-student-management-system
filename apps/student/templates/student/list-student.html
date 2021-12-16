@@ -49,8 +49,8 @@
                                     <td>{{student.id}}</td>
                                     <td>
                                        <h2 class="table-avatar">
-                                          <a href="student-details.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{{student.admin.profile_pic.url}}" alt="User Image"></a>
-                                          <a href="student-details.html">{{student.admin.first_name}}&nbsp;{{student.admin.last_name}}</a>
+                                          <a href="{% url 'student:edit_student' student.id %}" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="{{student.admin.profile_pic.url}}" alt="User Image"></a>
+                                          <a href="{% url 'student:edit_student' student.id %}">{{student.admin.first_name}}&nbsp;{{student.admin.last_name}}</a>
                                        </h2>
                                     </td>
                                     <td>{{student.admin.email}}</td>
@@ -62,7 +62,7 @@
                                     <td>{{student.updated_at}}</td>
                                     <td class="text-right">
                                        <div class="actions">
-                                          <a href="edit-student.html" class="btn btn-sm bg-success-light mr-2">
+                                          <a href="{% url 'student:edit_student' student.id %}" class="btn btn-sm bg-success-light mr-2">
                                           <i class="fas fa-pen"></i>
                                           </a>
                                           <a href="#" class="btn btn-sm bg-danger-light">

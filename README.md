@@ -356,3 +356,21 @@
         modified:   apps/student/views.py
         new file:   media/images/profile_pic/SushantSinghRajput_cMQOCfZ.PNG
         modified:   templates/shared/sidebar.html
+
+
+#### 7.11 STUDENT Part 11 - Edit Student Frontend and Backends
+
+        NOTE:
+
+        -Finished video 33 but its not done
+        -can't update the student yet
+        -gender can't be update bc there was only one choices
+        -profile_pic must also be updated if update someting
+        -it just like start addin a new student
+
+        modified:   README.md
+        new file:   apps/student/templates/student/detail-student.html
+        modified:   apps/student/templates/student/list-student.html
+        modified:   apps/student/urls.py
+        modified:   apps/student/views.py
+        modified:   apps/user/templates/user/profile.html
